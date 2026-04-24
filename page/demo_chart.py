@@ -50,9 +50,9 @@ def render() -> None:
 
     st.write("# Contoh penggunaan dataframe untuk chart:")
     dataset = {
-        "normal": "data/normal.csv",
-        "promosi": "data/promosi.csv",
-        "musiman": "data/musiman.csv",
+        "normal": "https://github.com/ekosup/project-deployment/blob/fe9da245f33cae3c3c80e15447c3dbffec8d2b06/data/normal.csv",
+        "promosi": "https://github.com/ekosup/project-deployment/blob/fe9da245f33cae3c3c80e15447c3dbffec8d2b06/data/promosi.csv",
+        "musiman": "https://github.com/ekosup/project-deployment/blob/fe9da245f33cae3c3c80e15447c3dbffec8d2b06/data/musiman.csv",
     }
 
     options = ["normal", "promosi", "musiman"]
