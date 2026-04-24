@@ -1,7 +1,11 @@
 import streamlit as st
 
 from core.theme import apply_kemenkeu_theme, setup_page
-from page import beranda, dasar_widget, deployment, endpoint_llm, mini_project, state_cache, form_widget
+from page import (
+    beranda, dasar_widget, demo_chart, deployment, 
+    endpoint_llm, mini_project, state_cache, 
+    form_widget, demo_wiring_model
+)
 
 setup_page()
 apply_kemenkeu_theme()
@@ -12,6 +16,8 @@ pages = [
     st.Page(state_cache.render, title="State & Cache", icon=":material/tune:", url_path="state-cache"),
     st.Page(form_widget.render, title="Form widget", icon=":material/note:", url_path="form-widget"),
     st.Page(mini_project.render, title="Mini Project", icon=":material/dashboard:", url_path="mini-project"),    
+    st.Page(demo_wiring_model.render, title="Demo Wiring Model", icon=":material/extension:", url_path="demo-wiring-model"),
+    st.Page(demo_chart.render, title="Demo Chart", icon=":material/insert_chart:", url_path="demo-chart"),
     st.Page(endpoint_llm.render, title="Endpoint LLM", icon=":material/smart_toy:", url_path="endpoint-llm"),
     st.Page(deployment.render, title="Deployment", icon=":material/rocket_launch:", url_path="deployment"),
 ]
